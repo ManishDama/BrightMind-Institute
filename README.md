@@ -1,4 +1,4 @@
-<h1 align="center">🎓 EduTech Coaching Institute Portal</h1>
+<h1 align="center">🎓 BrightMind Institute Portal</h1>
 
 <p align="center">
   A full-stack Spring MVC based web application for managing student registrations, course enrollments, and admin operations for a coaching institution.
