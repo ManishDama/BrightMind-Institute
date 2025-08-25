@@ -137,22 +137,38 @@
         <form action="enquiry" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Full Name</label>
+<<<<<<< HEAD
             <input type="text" class="form-control" name="enquiryPersonName" id="name" placeholder="Your Name">
+=======
+            <input type="text" class="form-control" name="enquiryPersonName" id="name" placeholder="Your Name" required>
+>>>>>>> dev2
           </div>
 
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
+<<<<<<< HEAD
             <input type="email" class="form-control" name="enquiryPersonEmail" id="email" placeholder="you@example.com">
+=======
+            <input type="email" class="form-control" name="enquiryPersonEmail" id="email" placeholder="you@example.com" required="required">
+>>>>>>> dev2
           </div>
 
           <div class="mb-3">
             <label for="subject" class="form-label">Subject</label>
+<<<<<<< HEAD
             <input type="text" class="form-control" name="enquirySubject" id="subject" placeholder="Course Inquiry, Feedback, etc.">
+=======
+            <input type="text" class="form-control" name="enquirySubject" id="subject" placeholder="Course Inquiry, Feedback, etc." required="required">
+>>>>>>> dev2
           </div>
 
           <div class="mb-3">
             <label for="message" class="form-label">Your Message</label>
+<<<<<<< HEAD
             <textarea class="form-control" id="message" name="enquiryMessage" rows="5" placeholder="Write your message here..."></textarea>
+=======
+            <textarea class="form-control" id="message" name="enquiryMessage" rows="5" placeholder="Write your message here..." required="required"></textarea>
+>>>>>>> dev2
           </div >
 
 			<div class="mb-3 text-center">

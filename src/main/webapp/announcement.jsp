@@ -38,10 +38,31 @@
             </div>
 
 			
+<<<<<<< HEAD
             <div class="card-footer bg-white border-0 text-center">
               <a href="updateannouncement/${announce.announcementId}" class="btn btn-outline-primary btn-sm me-2">Update</a>
               <a href="deleteannouncement/${announce.announcementId}" class="btn btn-outline-danger btn-sm">Delete</a>
             </div>
+=======
+            <div class="card-footer bg-white border-0">
+    				<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+				        <a href="updateannouncement/${announce.announcementId}"
+				           class="btn btn-primary btn-sm me-2 mb-2 mb-md-0 d-flex align-items-center justify-content-center">
+				            Update
+				        </a>
+				        
+				        <a href="students-by-announcement/${announce.announcementId}"
+				           class="btn btn-info btn-sm me-2 mb-2 mb-md-0 d-flex align-items-center justify-content-center">
+				            List Of Students
+				        </a>
+				        
+				        <a href="enrollments-by-announcement/${announce.announcementId}"
+				           class="btn btn-success btn-sm d-flex align-items-center justify-content-center">
+				            List Of Enrollments
+				        </a>
+    				</div>
+				</div>
+>>>>>>> dev2
           </div>
         </div>
       </c:forEach>

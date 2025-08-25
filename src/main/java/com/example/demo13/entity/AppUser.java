@@ -8,7 +8,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+<<<<<<< HEAD
 import jakarta.persistence.OneToMany;
+=======
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+>>>>>>> dev2
 
 
 @Entity
@@ -30,22 +36,37 @@ public class AppUser {
 	@Column(name="student_password")
 	private String studentPassword;
 	
+<<<<<<< HEAD
 	@OneToMany(mappedBy = "appUser", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Student> student;
+=======
+	@OneToOne
+	@JoinColumn(name="student_id",referencedColumnName = "studentId")
+	private Student student;
+>>>>>>> dev2
 
 	public AppUser() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+<<<<<<< HEAD
 	public AppUser(long appUserId, String studentEmail, String studentName, String studentPhone,
 			String studentPassword) {
+=======
+	public AppUser(long appUserId, String studentEmail, String studentName, String studentPhone, String studentPassword,
+			Student student) {
+>>>>>>> dev2
 		super();
 		this.appUserId = appUserId;
 		this.studentEmail = studentEmail;
 		this.studentName = studentName;
 		StudentPhone = studentPhone;
 		this.studentPassword = studentPassword;
+<<<<<<< HEAD
+=======
+		this.student = student;
+>>>>>>> dev2
 	}
 
 	public long getAppUserId() {
@@ -88,6 +109,7 @@ public class AppUser {
 		this.studentPassword = studentPassword;
 	}
 
+<<<<<<< HEAD
 	public List<Student> getStudent() {
 		return student;
 	}
@@ -95,6 +117,17 @@ public class AppUser {
 	public void setStudent(List<Student> student) {
 		this.student = student;
 	}
+=======
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+
+	
+>>>>>>> dev2
 	
 	
 	

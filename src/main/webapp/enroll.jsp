@@ -37,12 +37,21 @@
                 <!-- Phone -->
                 <div class="mb-4">
                     <label for="enrollStudentPhone" class="form-label fw-semibold">Phone Number</label>
+<<<<<<< HEAD
                     <input type="tel" class="form-control" name="enrollStudentPhone" id="enrollStudentPhone" placeholder="Enter your phone number" required>
                 </div>
                 
                 <div class="text-center mb-4">
                 <span class="text-center text-success">${msg}</span>
                 </div>
+=======
+                    <input type="tel" class="form-control" name="enrollStudentPhone" id="enrollStudentPhone" placeholder="Enter your phone number" pattern="[6-9]{1}[0-9]{9}" maxlength="10" required>
+                </div>
+                
+                <div class="text-center mb-4" style="font-family: Arial, sans-serif;">
+    					<span class="text-center text-success">${msg}</span>
+				</div>
+>>>>>>> dev2
 				 
                 <!-- Buttons -->
                 <div class="d-flex justify-content-center">
